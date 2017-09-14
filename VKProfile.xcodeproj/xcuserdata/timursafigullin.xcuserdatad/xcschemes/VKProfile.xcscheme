@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7CFED7C51F66BC9200B70E8E"
-               BuildableName = "TestSingleViewAppProject.app"
-               BlueprintName = "TestSingleViewAppProject"
-               ReferencedContainer = "container:TestSingleViewAppProject.xcodeproj">
+               BlueprintIdentifier = "CB5A1A711F66D55500C1971E"
+               BuildableName = "VKProfile.app"
+               BlueprintName = "VKProfile"
+               ReferencedContainer = "container:VKProfile.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7CFED7C51F66BC9200B70E8E"
-            BuildableName = "TestSingleViewAppProject.app"
-            BlueprintName = "TestSingleViewAppProject"
-            ReferencedContainer = "container:TestSingleViewAppProject.xcodeproj">
+            BlueprintIdentifier = "CB5A1A711F66D55500C1971E"
+            BuildableName = "VKProfile.app"
+            BlueprintName = "VKProfile"
+            ReferencedContainer = "container:VKProfile.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7CFED7C51F66BC9200B70E8E"
-            BuildableName = "TestSingleViewAppProject.app"
-            BlueprintName = "TestSingleViewAppProject"
-            ReferencedContainer = "container:TestSingleViewAppProject.xcodeproj">
+            BlueprintIdentifier = "CB5A1A711F66D55500C1971E"
+            BuildableName = "VKProfile.app"
+            BlueprintName = "VKProfile"
+            ReferencedContainer = "container:VKProfile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7CFED7C51F66BC9200B70E8E"
-            BuildableName = "TestSingleViewAppProject.app"
-            BlueprintName = "TestSingleViewAppProject"
-            ReferencedContainer = "container:TestSingleViewAppProject.xcodeproj">
+            BlueprintIdentifier = "CB5A1A711F66D55500C1971E"
+            BuildableName = "VKProfile.app"
+            BlueprintName = "VKProfile"
+            ReferencedContainer = "container:VKProfile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

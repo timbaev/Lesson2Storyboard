@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestSingleViewAppProject.xcscheme</key>
+		<key>VKProfile.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7CFED7C51F66BC9200B70E8E</key>
+		<key>CB5A1A711F66D55500C1971E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
