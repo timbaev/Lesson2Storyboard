@@ -12,6 +12,9 @@
 		CB5A1A7B1F66D55500C1971E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5A1A791F66D55500C1971E /* Main.storyboard */; };
 		CB5A1A7D1F66D55500C1971E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5A1A7C1F66D55500C1971E /* Assets.xcassets */; };
 		CB5A1A801F66D55500C1971E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5A1A7E1F66D55500C1971E /* LaunchScreen.storyboard */; };
+		CB7DFB981F7011C90041877A /* FollowersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7DFB961F7011C90041877A /* FollowersTableViewController.swift */; };
+		CB7DFB9C1F7012400041877A /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7DFB9A1F7012400041877A /* FollowerTableViewCell.swift */; };
+		CB7DFB9D1F7012400041877A /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7DFB9B1F7012400041877A /* FollowerTableViewCell.xib */; };
 		CB9B22AD1F6EA7B10093AA92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22AC1F6EA7B10093AA92 /* User.swift */; };
 		CB9B22AF1F6EACEE0093AA92 /* UserInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22AE1F6EACEE0093AA92 /* UserInfoData.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,9 @@
 		CB5A1A7C1F66D55500C1971E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5A1A7F1F66D55500C1971E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB5A1A811F66D55500C1971E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7DFB961F7011C90041877A /* FollowersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersTableViewController.swift; sourceTree = "<group>"; };
+		CB7DFB9A1F7012400041877A /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
+		CB7DFB9B1F7012400041877A /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
 		CB9B22AC1F6EA7B10093AA92 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CB9B22AE1F6EACEE0093AA92 /* UserInfoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +72,9 @@
 				CB5A1A811F66D55500C1971E /* Info.plist */,
 				CB9B22AC1F6EA7B10093AA92 /* User.swift */,
 				CB9B22AE1F6EACEE0093AA92 /* UserInfoData.swift */,
+				CB7DFB961F7011C90041877A /* FollowersTableViewController.swift */,
+				CB7DFB9A1F7012400041877A /* FollowerTableViewCell.swift */,
+				CB7DFB9B1F7012400041877A /* FollowerTableViewCell.xib */,
 			);
 			path = VKProfile;
 			sourceTree = "<group>";
@@ -133,6 +142,7 @@
 				CB5A1A801F66D55500C1971E /* LaunchScreen.storyboard in Resources */,
 				CB5A1A7D1F66D55500C1971E /* Assets.xcassets in Resources */,
 				CB5A1A7B1F66D55500C1971E /* Main.storyboard in Resources */,
+				CB7DFB9D1F7012400041877A /* FollowerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7DFB981F7011C90041877A /* FollowersTableViewController.swift in Sources */,
 				CB5A1A781F66D55500C1971E /* ViewController.swift in Sources */,
 				CB5A1A761F66D55500C1971E /* AppDelegate.swift in Sources */,
 				CB9B22AF1F6EACEE0093AA92 /* UserInfoData.swift in Sources */,
 				CB9B22AD1F6EA7B10093AA92 /* User.swift in Sources */,
+				CB7DFB9C1F7012400041877A /* FollowerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

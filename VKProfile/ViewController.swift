@@ -42,11 +42,14 @@ class ViewController: UIViewController {
     @IBOutlet var photos: [UIImageView]!
     
     var count = 0
+    var user: User!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        user = generateUser()
+        
         createStyles()
         setLabels()
     }
@@ -112,18 +115,39 @@ class ViewController: UIViewController {
         self.view.layoutIfNeeded()
     }
     
+    private func generateUser() -> User {
+        var user = UserInfoData.generateUser()
+        for _ in 0 ..< 25 {
+            user.followers.append(UserInfoData.generateUser())
+        }
+        user.followers[0].onlineStatus = .computer
+        return user
+    }
+    
     private func setLabels() {
-        let online = "Online"
+        let onlineMobile = "Online (Моб.)"
         let offline = "Offlien"
+        let online = "Online"
         let year = "год"
         let years = "лет"
         let seperator = ","
         let photosText = "фотографии"
         
-        let user = UserInfoData.generateUser()
         self.title = user.name
         nameLabel.text = user.name + " " + user.surname
-        onlineStatusLabel.text = user.isOnline ? online : offline
+        
+        switch user.onlineStatus {
+        case .offline:
+            onlineStatusLabel.text = offline
+            break
+        case .mobile:
+            onlineStatusLabel.text = onlineMobile
+            break
+        case .computer:
+            onlineStatusLabel.text = online
+            break
+        }
+        
         ageLabel.text = String(user.age)
         if (user.age == 1) {
             yearsLabel.text = year
@@ -137,7 +161,7 @@ class ViewController: UIViewController {
         paragraph.alignment = .center
         let attributes: [String: Any] = [NSParagraphStyleAttributeName: paragraph]
         setTitle(with: infoButtons[0], type: .friends, count: user.friends, attributes: attributes)
-        setTitle(with: infoButtons[1], type: .followers, count: user.followers, attributes: attributes)
+        setTitle(with: infoButtons[1], type: .followers, count: user.followers.count, attributes: attributes)
         setTitle(with: infoButtons[2], type: .groups, count: user.groups, attributes: attributes)
         setTitle(with: infoButtons[3], type: .photos, count: user.photos.count, attributes: attributes)
         setTitle(with: infoButtons[4], type: .videos, count: user.videos, attributes: attributes)
@@ -152,6 +176,7 @@ class ViewController: UIViewController {
     
     @IBAction func onInfoClick(_ sender: UIButton) {
         if (count == 5) {
+            user = generateUser()
             setLabels()
             count = 0
         } else {
@@ -210,6 +235,11 @@ class ViewController: UIViewController {
         
         let attrString = NSAttributedString(string: "\(count)" + "\n" + title, attributes: attributes)
         button.setAttributedTitle(attrString, for: .normal)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let followerTVC = segue.destination as! FollowersTableViewController
+        followerTVC.followers = user.followers
     }
     
 }

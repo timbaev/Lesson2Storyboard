@@ -8,16 +8,23 @@
 
 import UIKit
 
+enum OnlineStatus {
+    case offline
+    case mobile
+    case computer
+    
+    static let statuses = [offline, mobile, computer]
+}
+
 struct User {
     var name: String
     var surname: String
-    var isOnline: Bool
+    var onlineStatus: OnlineStatus
     var age: Int
     var city: String
-    var friends: Int //по-хорошему, лучше использовать массив user (но пока без смысла)
-    var followers: Int //тоже самое
+    var friends: Int
+    var followers: [User]
     var photos: [UIImage]
-    //дальше пойдёт только кол-во, но а так, это будет массив различных структур (групп, фоток, аудито и тп)
     var groups: Int
     var videos: Int
     var audios: Int
